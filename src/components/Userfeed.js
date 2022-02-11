@@ -1,4 +1,5 @@
 import React from 'react';
+import { API_URL } from '../config';
 
 class Userfeed extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class Userfeed extends React.Component {
   };
 
   async componentDidMount() {
-    let tweets = await fetch("http://localhost:3000/tweets/:username")
+    let tweets = await fetch(`${API_URL}/tweets/:username`)
       .then(data => data.json());
     console.log(tweets);
 

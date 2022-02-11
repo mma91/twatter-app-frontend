@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { API_URL } from '../config';
 
 class Mainfeed extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Mainfeed extends React.Component {
   };
 
   async componentDidMount() {
-    let tweets = await fetch("http://localhost:3000/tweets")
+    let tweets = await fetch(`${API_URL}/tweets`)
       .then(data => data.json());
     console.log(tweets);
 
