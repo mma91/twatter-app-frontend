@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  background-color: rgb(209, 209, 250);
+}
+
+.App-header {
+  background-color: #80a5eb;
+  min-height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.all-tweets-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.tweet-container {
+  /* display: flex; */
+  border: solid black 1px;
+  width: 60%;
+  margin: 10px;
+  background-color: white;
+}
+
+.tweet-signature-container {
+  display: flex;
+  justify-content: space-around;
+}
